@@ -1,0 +1,13 @@
+/**
+Theme Name: Libro
+Author: Reijo N
+Author URI: https://buntod.com/
+Description: A place to download latest digital books.
+Version: 0.01
+Tags: libro, tailwind, digital books, free download
+Text Domain: libro
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
