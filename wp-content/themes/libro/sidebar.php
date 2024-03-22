@@ -1,3 +1,4 @@
+<h1>Sidebar</h1>
 <?php
 
 /** Check if sidebar is active. */
