@@ -17,7 +17,7 @@ function lib_enqueue() {
     wp_register_script('lib_flowbite', get_template_directory_uri() . '/assets/vendor/flowbite.js', array(), false, true);
 
     /** Enqueque script. */
-    wp_enqueue_script('jquery');
+    // wp_enqueue_script('jquery');
     wp_enqueue_script('lib_javascript');
     wp_enqueue_script('lib_flowbite');
 }
