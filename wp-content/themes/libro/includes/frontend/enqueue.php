@@ -3,7 +3,7 @@
 /** Enqueue libro scripts. */
 function lib_enqueue() {
     /** Register style. */
-    wp_register_style('lib_tailwind', get_template_directory_uri() . '/assets/style.css');
+    wp_register_style('lib_tailwind', get_template_directory_uri() . '/style.css');
     wp_register_style('lib_hamburger', get_template_directory_uri() . '/assets/vendor/hamburger.css');
     wp_register_style('lib_flowbite', get_template_directory_uri() . '/assets/vendor/flowbite.css');
 
