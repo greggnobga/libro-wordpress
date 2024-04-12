@@ -67,7 +67,7 @@
             <div class="bg-gray-800 border border-gray-700 rounded-lg p-8 md:p-12">
                 <h2 class="text-white text-3xl font-extrabold mb-2">Take a look at us; we are happy to get acquainted with you better.</h2>
                 <p class="text-lg font-normal text-gray-400 mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <a href="/about" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white  rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">Release Schedule</a>
+                <a href="/about" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white  rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">About Us</a>
             </div>
             <div class="bg-gray-800 border border-gray-700 rounded-lg p-8 md:p-12">
                 <h2 class="text-white text-3xl font-extrabold mb-2">If you can't find what you're looking for, get in touch with us.</h2>
@@ -121,10 +121,10 @@
         <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white">Looking for a web developer?</h1>
         <p class="mb-8 text-lg font-normal  lg:text-xl sm:px-16 lg:px-48 text-gray-400">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
         <div class="flex flex-col gap-2 space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white  rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">
+            <a href="https://buntod.com/contact" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white  rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">
                 Contact Us
             </a>
-            <a href="#" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium focus:outline-none rounded-lg border focus:z-10 focus:ring-4 bg-gray-800 text-gray-400 border-gray-700 hover:text-gray-200 hover:bg-gray-700">
+            <a href="https://buntod.com/" target="_blank" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium focus:outline-none rounded-lg border focus:z-10 focus:ring-4 bg-gray-800 text-gray-400 border-gray-700 hover:text-gray-200 hover:bg-gray-700">
                 Our Portfolio
             </a>
         </div>
