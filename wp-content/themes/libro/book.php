@@ -12,8 +12,11 @@
             <!-- Card -->
             <?php
                 $latest_books = new WP_Query(array(
-                    'post_per_page' => 10,
                     'post_type' => 'books',
+                    'post_status' => 'publish',
+                    'posts_per_page' => 10,
+                    'orderby' => 'date',
+                    'order' => 'DESC',
                 ));
                 if ($latest_books->have_posts()) {
                     while($latest_books->have_posts()) {

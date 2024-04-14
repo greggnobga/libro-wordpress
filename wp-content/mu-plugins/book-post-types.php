@@ -2,6 +2,8 @@
 /** Post types. */
 function book_post_types() {
     register_post_type( 'books', array(
+        'supports' => array('title', 'editor'),
+        'rewrite' => array('slug' => 'books'),
         'public' => true,
         'labels' => array(
                 'name' => 'Books',
@@ -11,7 +13,6 @@ function book_post_types() {
                 'singular_name' => 'Book'
             ),
         'menu_icon' => 'dashicons-book',
-
     ));
 }
 

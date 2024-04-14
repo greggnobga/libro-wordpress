@@ -86,8 +86,11 @@
             <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
             <?php
                 $latest_books = new WP_Query(array(
-                    'post_per_page' => 3,
                     'post_type' => 'books',
+                    'post_status' => 'publish',
+                    'posts_per_page' => 3,
+                    'orderby' => 'date',
+                    'order' => 'DESC',
                 ));
                 if ($latest_books->have_posts()) {
                     while($latest_books->have_posts()) {
