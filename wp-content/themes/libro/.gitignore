@@ -1,14 +1,29 @@
 # dependencies
 node_modules
 
-# misc
+# Env
 .htaccess
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*
+!.env.example
+!.env.test
 
+# Npm
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Output
+.output
+.vercel
+/.svelte-kit
+/build
+/dist
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*

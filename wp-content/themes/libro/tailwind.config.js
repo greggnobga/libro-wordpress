@@ -1,8 +1,7 @@
-module.exports = {
-  important: true,
-  content: ["./**/*.php"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+export default {
+    content: ['./*.php', './*.js', './*.svelte'],
+    theme: {
+        extend: {},
+    },
+    plugins: [],
+};
