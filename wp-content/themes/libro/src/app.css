@@ -1,0 +1,29 @@
+/** Declare font face. */
+@font-face {
+    font-family: Montserrat;
+    src: local('/assets/fonts/montserrat-serif.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('/assets/fonts/open-sans.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: local('/assets/fonts/roboto-mono.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Kalam';
+    src: local('/assets/fonts/kalam-hand.ttf');
+    font-weight: normal;
+}
+
+/** Import tailwind. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
