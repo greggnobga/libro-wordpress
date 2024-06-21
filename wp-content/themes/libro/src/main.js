@@ -1,9 +1,10 @@
 /** Import tailwind. */
+import './lib/vendor/hamburger.css';
 import './app.css';
 
 /** Import components. */
-import Car from './lib/Carousel.svelte';
-import Nav from './lib/Navigation.svelte';
+import Car from './lib/components/Carousel.svelte';
+import Nav from './lib/components/Navigation.svelte';
 
 /** Declare init function. */
 function init() {

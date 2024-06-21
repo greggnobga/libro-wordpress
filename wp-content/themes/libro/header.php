@@ -7,5 +7,5 @@
     <?php wp_head(); ?>
 </head>
 
-<body class="p-2 bg-slate-100">
+<body class="bg-slate-300">
     <nav class='svelte-navigation'></nav>

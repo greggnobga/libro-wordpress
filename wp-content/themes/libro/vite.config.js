@@ -44,6 +44,8 @@ export default defineConfig({
     },
 
     resolve: {
-        alias: {},
+        alias: {
+            $lib: '/src/lib',
+        },
     },
 });
