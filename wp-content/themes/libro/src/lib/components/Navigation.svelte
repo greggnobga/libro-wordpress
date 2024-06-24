@@ -3,12 +3,12 @@
     import { onDestroy, onMount } from 'svelte';
 
     /** Import components. */
-    import Home from '$lib/Icon/Home.svelte';
-    import Books from '$lib/Icon/Books.svelte';
-    import Blog from '$lib/Icon/Blog.svelte';
-    import About from '$lib/Icon/About.svelte';
-    import Contact from '$lib/Icon/Contact.svelte';
-    import Search from '$lib/Icon/Search.svelte';
+    import Home from '$lib/icons/Home.svelte';
+    import Books from '$lib/icons/Books.svelte';
+    import Blog from '$lib/icons/Blog.svelte';
+    import About from '$lib/icons/About.svelte';
+    import Contact from '$lib/icons/Contact.svelte';
+    import Search from '$lib/icons/Search.svelte';
 
     /** Declare innerWidth and do dynamic statement to determine the value of isMobile. */
     let innerWidth = 0;
@@ -37,8 +37,6 @@
     });
 
     $: pathName = url !== '' ? url : '/';
-
-    $: console.log(pathName);
 
     /** Call on destroy. */
     onDestroy(() => {
@@ -79,7 +77,7 @@
     </div>
     {#if isMobile}
         <div
-            class="absolute h-screen w-full -translate-x-full flex flex-col justify-center items-center bg-coast md:px-2 md:py-3 md:w-6/12 md:translate-x-0 md:relative md:flex-row md:h-full md:justify-center md:items-center md:bg-transparent"
+            class="absolute h-screen w-full -translate-x-full flex flex-col justify-center items-center bg-coast md:px-2 md:py-3 md:w-6/12 md:translate-x-0 md:relative md:flex-row md:h-full md:justify-center md:items-center md:bg-transparent z-10"
             class:translate-x-0={isMobile}>
             <div
                 class={`cursor-pointer flex p-1 my-2 w-6/12 md:w-[8rem] md:px-2 mx-2 md:mx-1 border-b ${pathName === '/' ? 'border-energy' : 'border-slate-200'} hover:border-energy`}>
