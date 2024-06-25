@@ -77,7 +77,7 @@
     </div>
     {#if isMobile}
         <div
-            class="absolute h-screen w-full -translate-x-full flex flex-col justify-center items-center bg-coast md:px-2 md:py-3 md:w-6/12 md:translate-x-0 md:relative md:flex-row md:h-full md:justify-center md:items-center md:bg-transparent z-10"
+            class="absolute h-screen w-full -translate-x-full flex flex-col justify-center items-center bg-coast md:px-2 md:py-3 md:w-6/12 md:translate-x-0 md:relative md:flex-row md:h-full md:justify-end md:items-center md:bg-transparent z-10"
             class:translate-x-0={isMobile}>
             <div
                 class={`cursor-pointer flex p-1 my-2 w-6/12 md:w-[8rem] md:px-2 mx-2 md:mx-1 border-b ${pathName === '/' ? 'border-energy' : 'border-slate-200'} hover:border-energy`}>

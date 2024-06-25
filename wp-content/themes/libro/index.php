@@ -3,11 +3,239 @@
 
 <!-- Main content.-->
 <main class="min-h-screen">
-    <div class='svelte-carousel'></div>
+    <!-- Carousel -->
+    <section class='svelte-carousel'></section>
 
-    <h1 class="text-red-500">Hello World!</h1>
+    <!-- Section -->
+    <section class="bg-slate-300">
+        <div class="py-8 px-4 mx-auto max-w-screen-4xl lg:py-8">
+            <div class="bg-slate-100 border-1 border-slate-500 rounded p-8 md:p-12 mb-8">
+                <h1 class="text-luxor text-3xl md:text-5xl font-extrabold mb-2">Go on an adventure with completely broken heroes.</h1>
+                <p class="text-lg font-normal text-slate-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="/books" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-slate-100  rounded focus:ring-4 focus:outline-none bg-luxor hover:bg-hokey hover:text-coast focus:ring-energy">
+                    Read Books
+                </a>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-slate-100 border-1 border-slate-500 rounded p-8 md:p-12">
+                    <h2 class="text-coast text-3xl font-extrabold mb-2">Take a look at us; we are happy to get acquainted with you better.</h2>
+                    <p class="text-lg font-normal text-slate-600 mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a href="/about" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-slate-100  rounded focus:ring-4 focus:outline-none bg-luxor hover:bg-hokey hover:text-coast focus:ring-energy">About Us</a>
+                </div>
+                <div class="bg-slate-100 border-1 border-slate-500 rounded p-8 md:p-12">
+                    <h2 class="text-coast text-3xl font-extrabold mb-2">If you can't find what you're looking for, get in touch with us.</h2>
+                    <p class="text-lg font-normal text-slate-600 mb-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <a href="/contact" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-slate-100  rounded focus:ring-4 focus:outline-none bg-luxor hover:bg-hokey hover:text-coast focus:ring-energy">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h1 class="flex md:hidden text-green-500">Php hidden MD!</h1>
+    <!-- Section -->
+    <section class="grid grid-cols-1 md:grid-cols-12 bg-gray-200 py-4">
+        <div class="md:col-span-8">
+            <div class="col-span-8">
+                <h2 class="p-4">Latest Books</h2>
+            </div>
+            <div class="container mx-auto py-2 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="cols-span-1 flex flex-col bg-slate-100 border border-slate-200 rounded p-2">
+                    <h2 class="mb-2 font-bold text-sm">
+                        Ascendance Of A Bookworm
+                    </h2>
+                    <div class="mb-2 flex flex-wrap">
+                        <div class="mb-2 flex flex-wrap">
+                            <img class="object-fill h-auto md:h-34 w-full rounded overflow-hidden" src='/wp-content/themes/libro/assets/images/bookworm.jpg' alt='Title' />
+                        </div>
+                    </div>
+                    <p class="text-xs">A certain college girl who loved books ever since she was a little girl dies in an accident and is reborn in another world she knows nothing about.</p>
+                    <div class="flex flex-wrap mt-auto pt-3 text-xs">
+                        <p class="mr-2 mb-2">isekai</p>
+                        <p class="mr-2 mb-2">books</p>
+                    </div>
+                </div>
+                <div class="cols-span-1 flex flex-col bg-slate-100 border border-slate-200 rounded p-2">
+                    <h2 class="mb-2 font-bold text-sm">
+                        Ascendance Of A Bookworm
+                    </h2>
+                    <div class="mb-2 flex flex-wrap">
+                        <div class="mb-2 flex flex-wrap">
+                            <img class="object-fill h-auto md:h-34 w-full rounded overflow-hidden" src='/wp-content/themes/libro/assets/images/bookworm.jpg' alt='Title' />
+                        </div>
+                    </div>
+                    <p class="text-xs">A certain college girl who loved books ever since she was a little girl dies in an accident and is reborn in another world she knows nothing about.</p>
+                    <div class="flex flex-wrap mt-auto pt-3 text-xs">
+                        <p class="mr-2 mb-2">isekai</p>
+                        <p class="mr-2 mb-2">books</p>
+                    </div>
+                </div>
+                <div class="cols-span-1 flex flex-col bg-slate-100 border border-slate-200 rounded p-2">
+                    <h2 class="mb-2 font-bold text-sm">
+                        Ascendance Of A Bookworm
+                    </h2>
+                    <div class="mb-2 flex flex-wrap">
+                        <div class="mb-2 flex flex-wrap">
+                            <img class="object-fill h-auto md:h-34 w-full rounded overflow-hidden" src='/wp-content/themes/libro/assets/images/bookworm.jpg' alt='Title' />
+                        </div>
+                    </div>
+                    <p class="text-xs">A certain college girl who loved books ever since she was a little girl dies in an accident and is reborn in another world she knows nothing about.</p>
+                    <div class="flex flex-wrap mt-auto pt-3 text-xs">
+                        <p class="mr-2 mb-2">isekai</p>
+                        <p class="mr-2 mb-2">books</p>
+                    </div>
+                </div>
+                <div class="cols-span-1 flex flex-col bg-slate-100 border border-slate-200 rounded p-2">
+                    <h2 class="mb-2 font-bold text-sm">
+                        Ascendance Of A Bookworm
+                    </h2>
+                    <div class="mb-2 flex flex-wrap">
+                        <div class="mb-2 flex flex-wrap">
+                            <img class="object-fill h-auto md:h-34 w-full rounded overflow-hidden" src='/wp-content/themes/libro/assets/images/bookworm.jpg' alt='Title' />
+                        </div>
+                    </div>
+                    <p class="text-xs">A certain college girl who loved books ever since she was a little girl dies in an accident and is reborn in another world she knows nothing about.</p>
+                    <div class="flex flex-wrap mt-auto pt-3 text-xs">
+                        <p class="mr-2 mb-2">isekai</p>
+                        <p class="mr-2 mb-2">books</p>
+                    </div>
+                </div>
+                <div class="cols-span-1 flex flex-col bg-slate-100 border border-slate-200 rounded p-2">
+                    <h2 class="mb-2 font-bold text-sm">
+                        Ascendance Of A Bookworm
+                    </h2>
+                    <div class="mb-2 flex flex-wrap">
+                        <div class="mb-2 flex flex-wrap">
+                            <img class="object-fill h-auto md:h-34 w-full rounded overflow-hidden" src='/wp-content/themes/libro/assets/images/bookworm.jpg' alt='Title' />
+                        </div>
+                    </div>
+                    <p class="text-xs">A certain college girl who loved books ever since she was a little girl dies in an accident and is reborn in another world she knows nothing about.</p>
+                    <div class="flex flex-wrap mt-auto pt-3 text-xs">
+                        <p class="mr-2 mb-2">isekai</p>
+                        <p class="mr-2 mb-2">books</p>
+                    </div>
+                </div>
+                <div class="cols-span-1 flex flex-col bg-slate-100 border border-slate-200 rounded p-2">
+                    <h2 class="mb-2 font-bold text-sm">
+                        Ascendance Of A Bookworm
+                    </h2>
+                    <div class="mb-2 flex flex-wrap">
+                        <div class="mb-2 flex flex-wrap">
+                            <img class="object-fill h-auto md:h-34 w-full rounded overflow-hidden" src='/wp-content/themes/libro/assets/images/bookworm.jpg' alt='Title' />
+                        </div>
+                    </div>
+                    <p class="text-xs">A certain college girl who loved books ever since she was a little girl dies in an accident and is reborn in another world she knows nothing about.</p>
+                    <div class="flex flex-wrap mt-auto pt-3 text-xs">
+                        <p class="mr-2 mb-2">isekai</p>
+                        <p class="mr-2 mb-2">books</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="md:col-span-4">
+            <div class="col-span-4">
+                <h2 class="p-4">Latest Posts</h2>
+            </div>
+            <div class="container mx-auto py-2 px-4 grid grid-cols-1 gap-4">
+                <div class="grid grid-cols-6 bg-slate-100 border border-slate-200 rounded p-2">
+                    <div class="col-span-2 px-2 flex flex-wrap">
+                        <div class="mb-2 flex flex-wrap">
+                            <img class="object-fill h-34 w-full rounded overflow-hidden" src='/wp-content/themes/libro/assets/images/bookworm.jpg' alt='Title' />
+                        </div>
+                    </div>
+                    <div class="col-span-4 px-2 flex flex-wrap">
+                        <h2 class="font-bold text-sm">
+                            Ascendance Of A Bookworm
+                        </h2>
+                        <p class="text-xs">A certain college girl who loved books ever since she was a little girl dies in an accident and is reborn in another world she knows nothing about.</p>
+                        <div class="flex flex-wrap mt-auto pt-3 text-xs">
+                            <p class="mr-2 mb-2">isekai</p>
+                            <p class="mr-2 mb-2">books</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-6 bg-slate-100 border border-slate-200 rounded p-2">
+                    <div class="col-span-2 px-2 flex flex-wrap">
+                        <div class="mb-2 flex flex-wrap">
+                            <img class="object-fill h-34 w-full rounded overflow-hidden" src='/wp-content/themes/libro/assets/images/bookworm.jpg' alt='Title' />
+                        </div>
+                    </div>
+                    <div class="col-span-4 px-2 flex flex-wrap">
+                        <h2 class="font-bold text-sm">
+                            Ascendance Of A Bookworm
+                        </h2>
+                        <p class="text-xs">A certain college girl who loved books ever since she was a little girl dies in an accident and is reborn in another world she knows nothing about.</p>
+                        <div class="flex flex-wrap mt-auto pt-3 text-xs">
+                            <p class="mr-2 mb-2">isekai</p>
+                            <p class="mr-2 mb-2">books</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-6 bg-slate-100 border border-slate-200 rounded p-2">
+                    <div class="col-span-2 px-2 flex flex-wrap">
+                        <div class="mb-2 flex flex-wrap">
+                            <img class="object-fill h-34 w-full rounded overflow-hidden" src='/wp-content/themes/libro/assets/images/bookworm.jpg' alt='Title' />
+                        </div>
+                    </div>
+                    <div class="col-span-4 px-2 flex flex-wrap">
+                        <h2 class="font-bold text-sm">
+                            Ascendance Of A Bookworm
+                        </h2>
+                        <p class="text-xs">A certain college girl who loved books ever since she was a little girl dies in an accident and is reborn in another world she knows nothing about.</p>
+                        <div class="flex flex-wrap mt-auto pt-3 text-xs">
+                            <p class="mr-2 mb-2">isekai</p>
+                            <p class="mr-2 mb-2">books</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-6 bg-slate-100 border border-slate-200 rounded p-2">
+                    <div class="col-span-2 px-2 flex flex-wrap">
+                        <div class="mb-2 flex flex-wrap">
+                            <img class="object-fill h-34 w-full rounded overflow-hidden" src='/wp-content/themes/libro/assets/images/bookworm.jpg' alt='Title' />
+                        </div>
+                    </div>
+                    <div class="col-span-4 px-2 flex flex-wrap">
+                        <h2 class="font-bold text-sm">
+                            Ascendance Of A Bookworm
+                        </h2>
+                        <p class="text-xs">A certain college girl who loved books ever since she was a little girl dies in an accident and is reborn in another world she knows nothing about.</p>
+                        <div class="flex flex-wrap mt-auto pt-3 text-xs">
+                            <p class="mr-2 mb-2">isekai</p>
+                            <p class="mr-2 mb-2">books</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-6 bg-slate-100 border border-slate-200 rounded p-2">
+                    <div class="col-span-2 px-2 flex flex-wrap">
+                        <div class="mb-2 flex flex-wrap">
+                            <img class="object-fill h-34 w-full rounded overflow-hidden" src='/wp-content/themes/libro/assets/images/bookworm.jpg' alt='Title' />
+                        </div>
+                    </div>
+                    <div class="col-span-4 px-2 flex flex-wrap">
+                        <h2 class="font-bold text-sm">
+                            Ascendance Of A Bookworm
+                        </h2>
+                        <p class="text-xs">A certain college girl who loved books ever since she was a little girl dies in an accident and is reborn in another world she knows nothing about.</p>
+                        <div class="flex flex-wrap mt-auto pt-3 text-xs">
+                            <p class="mr-2 mb-2">isekai</p>
+                            <p class="mr-2 mb-2">books</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section -->
+    <section class="bg-slate-300">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-luxor">Looking for full stack web developer?</h1>
+            <p class="mb-8 text-lg font-normal  lg:text-xl sm:px-16 lg:px-48 text-slate-500">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
+            <div class="flex flex-col gap-2 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 w-full">
+                <a href="https://buntod.com/contact" target="_blank" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium focus:outline-none rounded border focus:z-10 focus:ring-4 bg-luxor text-slate-100 border-slate-300 hover:text-slate-100 hover:bg-hokey">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
 </main>
 
 
