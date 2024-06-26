@@ -1,6 +1,5 @@
 <?php
-function lib_setup_menu() {
-    register_nav_menu('primary', __('Primary Menu', 'libro'));
+function lib_setup()
+{
+    add_post_type_support('books', 'thumbnail');
 }
-
-?>
