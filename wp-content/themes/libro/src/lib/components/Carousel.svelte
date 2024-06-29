@@ -72,7 +72,9 @@
         particlesToShow={isMobile ? 3 : 1}
         particlesToScroll={2}>
         {#each images as image, imageIndex (image)}
-            <a href={pathName ? pathName + image.link : '/'}>
+            <a
+                href={pathName ? pathName + image.link : '/'}
+                class="hover:scale-95 transition delay-100 duration-300 ease-in-out">
                 <div class="flex items-stretch">
                     {#if loaded.includes(imageIndex)}
                         <div class="flex-1 p-2">
@@ -87,12 +89,12 @@
                                             alt={image.title} />
                                     </div>
                                     <p class="text-xs text-slate-600 text-left">
-                                        {image.description.split(' ').slice(0, 25).join(' ').concat('...')}
+                                        {image.description.split(' ').slice(0, 20).join(' ').concat('...')}
                                     </p>
                                 </div>
                                 <div class="p-4 flex flex-wrap items-center">
                                     {#each image.tags as tag, tagIndex (tag)}
-                                        {#if tagIndex <= 7}
+                                        {#if tagIndex <= 4}
                                             <p class="tracking-wide text-xs mr-2 mb-2">{tag}</p>
                                         {/if}
                                     {/each}

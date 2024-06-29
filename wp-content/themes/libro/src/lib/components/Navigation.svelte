@@ -2,14 +2,6 @@
     /** Import from svelte. */
     import { onDestroy, onMount } from 'svelte';
 
-    /** Import components. */
-    import Home from '$lib/icons/Home.svelte';
-    import Books from '$lib/icons/Books.svelte';
-    import Blog from '$lib/icons/Blog.svelte';
-    import About from '$lib/icons/About.svelte';
-    import Contact from '$lib/icons/Contact.svelte';
-    import Search from '$lib/icons/Search.svelte';
-
     /** Declare innerWidth and do dynamic statement to determine the value of isMobile. */
     let innerWidth = 0;
     $: isMobile = innerWidth <= 768 ? false : true;
@@ -67,12 +59,16 @@
 <div class="text-slate-200 bg-gradient-to-r from-amber-400 to-yellow-600 flex justify-between">
     <div class="flex">
         <div class="px-2 flex w-[8rem] h-full justify-start items-center">
-            <span class="w-8 h-8"><Books color="#E2E8F0" /></span>
+            <svg class="w-8 h-8" fill="#E2E8F0">
+                <use xlink:href="/wp-content/themes/libro/assets/images/sprite.svg#book"></use>
+            </svg>
             <a href="/" class="pl-2 uppercase">Libro</a>
         </div>
         <div class="px-2 flex w-full h-full justify-between items-center">
             <input class="w-full bg-transparent outline-none border-b border-slate-200 text-md transition:scale" />
-            <span class="w-6 h-6"><Search color="#E2E8F0" /></span>
+            <svg class="w-6 h-6" fill="#E2E8F0">
+                <use xlink:href="/wp-content/themes/libro/assets/images/sprite.svg#search"></use>
+            </svg>
         </div>
     </div>
     {#if isMobile}
@@ -81,28 +77,38 @@
             class:translate-x-0={isMobile}>
             <div
                 class={`cursor-pointer flex p-1 my-2 w-6/12 md:w-[8rem] md:px-2 mx-2 md:mx-1 border-b ${pathName === '/' ? 'border-energy' : 'border-slate-200'} hover:border-energy`}>
-                <p class="w-5 h-5"><Home color="#E2E8F0" /></p>
+                <svg class="w-5 h-5" fill="#E2E8F0">
+                    <use xlink:href="/wp-content/themes/libro/assets/images/sprite.svg#home"></use>
+                </svg>
                 <a href="/" class="pl-2">Home</a>
             </div>
 
             <div
                 class={`cursor-pointer flex p-1 my-2 w-6/12 md:w-[8rem] md:px-2 mx-2 md:mx-1 border-b ${pathName === 'books' ? 'border-energy' : 'border-slate-200'} hover:border-energy`}>
-                <p class="w-5 h-5"><Books color="#E2E8F0" /></p>
+                <svg class="w-5 h-5" fill="#E2E8F0">
+                    <use xlink:href="/wp-content/themes/libro/assets/images/sprite.svg#book"></use>
+                </svg>
                 <a href="/books" class="pl-2">Books</a>
             </div>
             <div
                 class={`cursor-pointer flex p-1 my-2 w-6/12 md:w-[8rem] md:px-2 mx-2 md:mx-1 border-b ${pathName === 'blog' ? 'border-energy' : 'border-slate-200'} hover:border-energy`}>
-                <p class="w-5 h-5"><Blog color="#E2E8F0" /></p>
+                <svg class="w-5 h-5" fill="#E2E8F0">
+                    <use xlink:href="/wp-content/themes/libro/assets/images/sprite.svg#blog"></use>
+                </svg>
                 <a href="/blog" class="pl-2">Blog</a>
             </div>
             <div
                 class={`cursor-pointer flex p-1 my-2 w-6/12 md:w-[8rem] md:px-2 mx-2 md:mx-1 border-b ${pathName === 'about' ? 'border-energy' : 'border-slate-200'} hover:border-energy`}>
-                <p class="w-5 h-5"><About color="#E2E8F0" /></p>
+                <svg class="w-5 h-5" fill="#E2E8F0">
+                    <use xlink:href="/wp-content/themes/libro/assets/images/sprite.svg#about"></use>
+                </svg>
                 <a href="/about" class="pl-2">About</a>
             </div>
             <div
                 class={`cursor-pointer flex p-1 my-2 w-6/12 md:w-[8rem] md:px-2 mx-2 md:mx-1 border-b ${pathName === 'contact' ? 'border-energy' : 'border-slate-200'} hover:border-energy`}>
-                <p class="w-5 h-5"><Contact color="#E2E8F0" /></p>
+                <svg class="w-5 h-5" fill="#E2E8F0">
+                    <use xlink:href="/wp-content/themes/libro/assets/images/sprite.svg#contact"></use>
+                </svg>
                 <a href="/contact" class="pl-2">Contact</a>
             </div>
         </div>
