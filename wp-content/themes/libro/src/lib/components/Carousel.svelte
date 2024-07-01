@@ -79,17 +79,17 @@
                     {#if loaded.includes(imageIndex)}
                         <div class="flex-1 p-2">
                             <div
-                                class="block bg-slate-100 overflow-hidden border border-slate-200 rounded h-full hover:bg-slate-200 hover:border-slate-100">
-                                <div class="p-4 h-[85%]">
+                                class="block bg-slate-100 overflow-hidden border border-slate-200 rounded hover:bg-slate-200 hover:border-slate-100">
+                                <div class="p-4 h-full">
                                     <h2 class="mt-2 mb-2 font-bold text-md font-heading">{image.title}</h2>
-                                    <div class="mb-4 flex flex-wrap">
+                                    <div class="flex flex-wrap h-[85%]">
                                         <img
                                             class="rounded-t-md object-cover h-48 w-full overflow-hidden"
                                             src={image.source}
                                             alt={image.title} />
                                     </div>
                                     <p class="text-xs text-slate-600 text-left">
-                                        {image.description.split(' ').slice(0, 20).join(' ').concat('...')}
+                                        {image.description.split(' ').slice(0, 25).join(' ').concat('...')}
                                     </p>
                                 </div>
                                 <div class="p-4 flex flex-wrap items-center">

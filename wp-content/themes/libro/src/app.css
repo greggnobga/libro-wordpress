@@ -1,3 +1,8 @@
+/** Import tailwind. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /** Declare font face. */
 @font-face {
     font-family: Montserrat;
@@ -23,7 +28,20 @@
     font-weight: normal;
 }
 
-/** Import tailwind. */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/** Overwrite wordpress pagination class. */
+.pagination {
+    @apply px-2 py-2 w-full flex flex-wrap justify-center items-center border-t border-slate-100;
+}
+
+.pagination > .page-numbers {
+    @apply px-4 py-2 rounded;
+}
+
+.pagination > .page-numbers:hover {
+    @apply bg-hokey text-slate-200;
+}
+
+.pagination > .prev:hover,
+.pagination > .next:hover {
+    @apply bg-slate-400 text-slate-100;
+}

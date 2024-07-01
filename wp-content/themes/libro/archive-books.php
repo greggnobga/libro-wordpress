@@ -1,5 +1,3 @@
-<?php /* Template Name: Book Layout */ ?>
-
 <?php get_header(); ?>
 
 <!-- Section -->
@@ -9,13 +7,13 @@
         <!-- Heading -->
         <h1 class="text-3xl md:text-2xl font-extrabold mb-4">Books</h1>
         <!-- Card -->
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 py-2 px-4 gap-4">
+        <div class="mb-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 py-2 px-4 gap-4">
             <?php
             $current_page = (get_query_var('paged')) ? get_query_var('paged') : 1;
             $latest_books = new WP_Query(array(
                 'post_type' => 'books',
                 'post_status' => 'publish',
-                'posts_per_page' => 3,
+                'posts_per_page' => 1,
                 'paged' => $current_page,
                 'orderby' => 'date',
                 'order' => 'DESC',
@@ -84,13 +82,7 @@
             ?>
         </div>
         <div class="pagination">
-            <nav>
-                <ul>
-                    <li><?php previous_posts_link('PREV', $latest_books->max_num_pages) ?></li>
-                    <li><?php next_posts_link('NEXT', $latest_books->max_num_pages) ?></li>
-                </ul>
-            </nav>
-
+            <?php lib_pagination($latest_books); ?>
         </div>
     </div>
     <?php wp_reset_postdata(); ?>

@@ -3,8 +3,8 @@
 <!-- Section -->
 <section class="min-h-screen bg-gray-700">
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
-         <!-- Wrapper -->
-         <div class="bg-gray-800 rounded-lg p-8 md:p-12 mb-8">
+        <!-- Wrapper -->
+        <div class="bg-gray-800 rounded-lg p-8 md:p-12 mb-8">
             <!-- Card -->
             <div class="grid grid-cols-1 md:grid-cols-4">
                 <div class="col-span-1 aspect-w-16 aspect-h-9 p-2">

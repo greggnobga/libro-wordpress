@@ -1,4 +1,4 @@
-<?php /* Template Name: Blog Layout */ ?>
+<?php /* Template Name: Blogs Layout */ ?>
 
 <?php get_header(); ?>
 
@@ -15,7 +15,7 @@
             $latest_posts = new WP_Query(array(
                 'post_type' => 'post',
                 'post_status' => 'publish',
-                'posts_per_page' => 3,
+                'posts_per_page' => 1,
                 'paged' => $current_page,
                 'orderby' => 'date',
                 'order' => 'DESC',
@@ -45,12 +45,7 @@
             <?php } ?>
         </div>
         <div class="pagination">
-            <nav>
-                <ul>
-                    <li><?php previous_posts_link('PREV', $latest_posts->max_num_pages) ?></li>
-                    <li><?php next_posts_link('NEXT', $latest_posts->max_num_pages) ?></li>
-                </ul>
-            </nav>
+            <?php lib_pagination($latest_posts); ?>
         </div>
     </div>
     <?php wp_reset_postdata(); ?>
