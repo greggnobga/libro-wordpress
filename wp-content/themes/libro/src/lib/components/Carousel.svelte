@@ -72,9 +72,7 @@
         particlesToShow={isMobile ? 3 : 1}
         particlesToScroll={2}>
         {#each images as image, imageIndex (image)}
-            <a
-                href={pathName ? pathName + image.link : '/'}
-                class="hover:scale-95 transition delay-100 duration-300 ease-in-out">
+            <a href={pathName ? pathName + image.link : '/'} class="hover:scale-95 transition-image">
                 <div class="flex items-stretch">
                     {#if loaded.includes(imageIndex)}
                         <div class="flex-1 p-2">

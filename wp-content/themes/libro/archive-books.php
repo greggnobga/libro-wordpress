@@ -13,7 +13,7 @@
             $latest_books = new WP_Query(array(
                 'post_type' => 'books',
                 'post_status' => 'publish',
-                'posts_per_page' => 1,
+                'posts_per_page' => 3,
                 'paged' => $current_page,
                 'orderby' => 'date',
                 'order' => 'DESC',
@@ -21,13 +21,13 @@
             if ($latest_books->have_posts()) {
                 while ($latest_books->have_posts()) {
                     $latest_books->the_post(); ?>
-                    <div class="flex flex-col bg-slate-100 border border-gray-100 rounded hover:border-slate-100 hover:bg-slate-200 shadow hover:scale-95 transition delay-100 duration-300 ease-in-out">
+                    <div class="flex flex-col bg-slate-100 border border-gray-100 rounded hover:border-slate-100 hover:bg-slate-200 shadow hover:scale-95 transition-image">
                         <div class="h-48 rounded">
                             <a href="<?php the_permalink(); ?>">
                                 <?php if (has_post_thumbnail($post->id)) { ?>
-                                    <img class="rounded-t-md w-full h-48 object-cover overflow-hidden border hover:border-slate-100 hover:scale-105 transition delay-100 duration-300 ease-in-out" src="<?php echo get_the_post_thumbnail_url($post->id); ?>" alt="" />
+                                    <img class="rounded-t-md w-full h-48 object-cover overflow-hidden border hover:border-slate-100 hover:scale-105 transition-image" src="<?php echo get_the_post_thumbnail_url($post->id); ?>" alt="" />
                                 <?php } else { ?>
-                                    <img class="rounded-t-md w-full h-48 object-cover overflow-hidden border hover:border-slate-100 hover:scale-105 transition delay-100 duration-300 ease-in-out" src="<?php echo get_template_directory_uri(); ?>/assets/images/bookworm.jpg" alt="" />
+                                    <img class="rounded-t-md w-full h-48 object-cover overflow-hidden border hover:border-slate-100 hover:scale-105 transition-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/bookworm.jpg" alt="" />
                                 <?php } ?>
                             </a>
                         </div>

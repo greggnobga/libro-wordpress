@@ -16,6 +16,7 @@ function book_post_types()
         ),
         'menu_icon' => 'dashicons-book',
         'has_archive' => true,
+        'taxonomies'  => array('category'),
     ));
 }
 

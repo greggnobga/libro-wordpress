@@ -30,7 +30,7 @@
 
 /** Overwrite wordpress pagination class. */
 .pagination {
-    @apply px-2 py-2 w-full flex flex-wrap justify-center items-center border-t border-slate-100;
+    @apply px-2 py-2 w-full flex flex-wrap justify-center items-center;
 }
 
 .pagination > .page-numbers {
@@ -44,4 +44,9 @@
 .pagination > .prev:hover,
 .pagination > .next:hover {
     @apply bg-slate-400 text-slate-100;
+}
+
+/** Transition. */
+.transition-image {
+    @apply transition delay-100 duration-300 ease-in-out;
 }
